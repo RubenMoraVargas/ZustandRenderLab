@@ -1,11 +1,12 @@
-interface Props {
-  count: number;
-}
-const ArticlesCounter = ({ count }: Props) => {
+"use client"; 
+import { countFromCounterStore } from "@/store/counter.store";
+
+const ArticlesCounter = () => { 
+  const   {count}   = countFromCounterStore();
+
   return (
     <div key={Math.random()} className="rerender  text-center mb-8">
-      {" "}
-      Articles showed:{count}{" "}
+      Articles showed:{count}
     </div>
   );
 };
