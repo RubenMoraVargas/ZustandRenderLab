@@ -8,7 +8,7 @@ export const Main = () => {
   return (
     <main>
       <Navbar />
-      <div className="mt-24">
+      <div className="mt-32 md:mt-24">
       <Title />
       <ButtonActions />
       <ArticlesCounter />
