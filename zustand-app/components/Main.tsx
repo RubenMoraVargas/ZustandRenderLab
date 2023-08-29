@@ -4,7 +4,7 @@ import ButtonActions from "./../components/ButtonActions";
 import ArticlesCounter from "./ArticlesCounter";
 import Navbar from "./Navbar";
 
-const Main = () => {
+export const Main = () => {
   return (
     <main>
       <Navbar />
