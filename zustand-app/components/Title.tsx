@@ -1,13 +1,15 @@
-"use client"; 
-import { titleFromCounterStore } from "@/store/counter.store";
-
-const Title = () => { 
-  const  {title}   =  titleFromCounterStore();
-
+"use client";
+import { useCounterStore } from "@/store/counter.store";
+import VisualComponent from "./VisualComponent";
+ 
+const Title = () => {  
+  const title = useCounterStore((state) => state.title);
   return (
-    <h1 key={Math.random()} className="rerender text-center text-2xl mb-8">
+    <VisualComponent> 
+    <h1 key={Math.random()} className="text-center text-2xl">
       {title}
     </h1>
+    </VisualComponent>
   );
 };
 

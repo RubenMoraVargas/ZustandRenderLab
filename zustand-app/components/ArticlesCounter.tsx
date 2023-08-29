@@ -1,13 +1,15 @@
-"use client"; 
-import { countFromCounterStore } from "@/store/counter.store";
+"use client";
+import { useCounterStore } from "@/store/counter.store";
+import VisualComponent from "./VisualComponent";
 
-const ArticlesCounter = () => { 
-  const   {count}   = countFromCounterStore();
-
+const ArticlesCounter = () => {
+  const count = useCounterStore((state) => state.count);
   return (
-    <div key={Math.random()} className="rerender  text-center mb-8">
+    <VisualComponent>
+    <div key={Math.random()} className="text-center">
       Articles showed:{count}
     </div>
+     </VisualComponent>
   );
 };
 
