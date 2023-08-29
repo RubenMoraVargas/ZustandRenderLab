@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 
 export const Main = () => {
   return (
-    <main>
+    <main className="bg-slate-900 ">
       <Navbar />
       <div className="mt-32 md:mt-24">
       <Title />

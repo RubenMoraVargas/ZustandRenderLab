@@ -30,7 +30,7 @@ function ButtonActions() {
       >
         <button
           type="button"
-          className={`inline-flex ${disableDecrement} items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 md:rounded-l-lg hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700`}
+          className={`inline-flex ${disableDecrement} justify-center min-w-48 w-48 items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 md:rounded-l-lg hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700`}
           onClick={() => {
             decrement(3);
           }}
@@ -40,7 +40,7 @@ function ButtonActions() {
         </button>
         <button
           type="button"
-          className={`inline-flex ${disableIncrement} items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700`}
+          className={`inline-flex ${disableIncrement}  justify-center min-w-48 w-48 items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700`}
           onClick={() => {
             increment(3);
           }}
@@ -50,7 +50,7 @@ function ButtonActions() {
         </button>
         <button
           type="button"
-          className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900   hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
+          className="inline-flex justify-center min-w-48 w-48 items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900   hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
           onClick={() => {
             reset();
           }}
@@ -60,7 +60,7 @@ function ButtonActions() {
         </button>
         <button
           type="button"
-          className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 md:rounded-r-md hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
+          className="inline-flex justify-center min-w-48 w-48 items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 md:rounded-r-md hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
           onClick={() => {
             changeTitle();
           }}

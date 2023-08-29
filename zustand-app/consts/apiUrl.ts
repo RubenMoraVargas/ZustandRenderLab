@@ -5,3 +5,4 @@ const startRandom = Math.floor(Math.random() * randomRange);
   return `https://jsonplaceholder.typicode.com/posts?_start=${startRandom}&_limit=${limit}`;
 }
   
+export const userBaseURL = `https://dummyapi.io/data/v1`;
