@@ -4,6 +4,19 @@ export interface Post {
   body: string;
 }
 
+export interface User {
+  id: string;
+  title: "mr" | "ms" | "mrs" | "miss" | "dr" | "";
+  firstName: string;
+  lastName: string;
+  gender: "male" | "female" | "other" | "";
+  email: string;
+  dateOfBirth: string;
+  registerDate: string;
+  phone: string;
+  picture: string;
+  location: object;
+}
 
 interface CounterStore {
   count: number;
